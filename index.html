@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kaylee's Daily Log</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6fb;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#5b6475}
+.wrap{max-width:440px;margin:0 auto;padding:18px 14px 110px}
+h1,.serif{font-family:Georgia,"Times New Roman",serif;color:#1c2540}
+h1{font-size:30px;margin:0;display:flex;justify-content:space-between;align-items:center}
+.gear{background:none;border:0;font-size:18px;cursor:pointer;color:#8a93a6}
+.sub{font-size:13px;margin-top:2px}
+.card{background:#fff;border:1px solid #e1e6ef;border-radius:12px;padding:12px 14px;margin-top:10px}
+.feed{background:#dce7f5;border-color:#d0dcee;padding:14px 16px}.feed .big{font-size:30px;font-weight:700;margin:0}.feed .m{font-size:13px;margin-top:4px}
+.row{display:flex;justify-content:space-between;align-items:center}
+b,.dk{color:#1c2540}
+.pill{background:#dce7f5;color:#1c2540;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:600}
+.bar{position:relative;height:5px;background:#dce7f5;border-radius:3px;margin-top:10px}.bar i{position:absolute;left:0;top:0;bottom:0;background:#4aa8b8;border-radius:3px}
+.tick{position:absolute;top:-2px;width:1.5px;height:9px;background:#5b6475}
+.days{display:flex;justify-content:space-between;align-items:center;margin:14px 0 4px;text-align:center}
+.days button{width:32px;height:32px;border-radius:50%;border:1px solid #e1e6ef;background:#fff;cursor:pointer;color:#1c2540}
+.days button:disabled{opacity:.35}.days b{display:block;font-size:14px}.days small{font-size:11px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.tile{background:#fff;border:1px solid #e1e6ef;border-radius:10px;padding:10px}
+.tile b{font-size:16px;display:block}.tile span{font-size:11px}
+.sleep{border-left:4px solid #4aa8b8;padding:0}.sleep>div{padding:10px 12px;border-top:1px solid #edf0f5;font-size:13px}.sleep>div:first-child{border:0;font-size:15px}
+.note{font-size:10px;color:#8a93a6}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}
+.quick button{background:#fff;border:1px solid #e1e6ef;border-radius:10px;padding:9px 2px;font-size:11px;font-weight:600;color:#1c2540;cursor:pointer}.quick button em{display:block;font-style:normal;font-size:20px}
+.empty{text-align:center;font-size:13px;padding:26px 0}
+.ent{display:flex;gap:10px;align-items:center;font-size:13px}.ent+.ent{border-top:1px solid #edf0f5;margin-top:8px;padding-top:8px}.ent .t{width:58px;color:#8a93a6;font-size:12px}.ent .d{flex:1;color:#1c2540}
+.ent button{border:0;background:none;cursor:pointer;font-size:14px}
+h3{font-size:14px;color:#1c2540;margin:26px 0 8px}
+.chart{display:flex;gap:4px;align-items:flex-end;height:110px}.chart div{flex:1;text-align:center;font-size:10px;display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+.chart i{display:block;background:#6f9fd8;border-radius:3px 3px 0 0;min-height:2px}.chart s{text-decoration:none;font-size:9px;color:#1c2540}
+.tools{display:flex;gap:8px;justify-content:center;margin-top:20px}.tools button,.tools label{font-size:12px;background:#fff;border:1px solid #e1e6ef;border-radius:8px;padding:6px 10px;cursor:pointer;color:#5b6475}
+.fab{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#3a8d9c;color:#fff;border:0;border-radius:999px;padding:12px 26px;font-size:15px;font-weight:600;box-shadow:0 4px 14px #3a8d9c55;cursor:pointer}
+.modal{position:fixed;inset:0;background:#1c254055;display:none;align-items:flex-end;justify-content:center}.modal.on{display:flex}
+.sheet{background:#fff;width:100%;max-width:440px;border-radius:16px 16px 0 0;padding:16px}
+.sheet label{display:block;font-size:12px;margin:10px 0 4px}.sheet input,.sheet select{width:100%;padding:8px;border:1px solid #d6dce7;border-radius:8px;font-size:14px}
+.seg{display:flex;flex-wrap:wrap;gap:4px}.seg button{flex:1;padding:7px;border:1px solid #d6dce7;background:#fff;border-radius:8px;cursor:pointer;font-size:12px}.seg button.on{background:#dce7f5;border-color:#6f9fd8;color:#1c2540}
+.acts{display:flex;gap:8px;margin-top:14px}.acts button{flex:1;padding:10px;border-radius:8px;border:1px solid #d6dce7;background:#fff;cursor:pointer}.acts .p{background:#3a8d9c;color:#fff;border:0}
+</style></head><body><div class="wrap">
+<h1><span id="name"></span><button class="gear" id="gear" title="Settings">⚙️</button></h1>
+<div class="sub" id="born"></div>
+<div class="card feed"><p class="big serif" id="since"></p><div class="m" id="sinceM"></div></div>
+<div class="card"><div class="row"><div><b>Daytime naps <span id="napMin"></span></b><div style="font-size:11px" id="napT"></div></div><span class="pill" id="napPill"></span></div>
+<div class="bar"><i id="napBar"></i><span class="tick" style="left:58.33%"></span><span class="tick" style="left:75%"></span></div></div>
+<div class="days"><button id="prev">‹</button><div><b id="dayL"></b><small id="dayD"></small></div><button id="next">›</button></div>
+<div class="grid" id="tiles"></div>
+<div class="card sleep" id="sleepC"></div>
+<div class="quick"><button data-q="bottle"><em>🍼</em>Bottle milk</button><button data-q="diaper"><em>🧷</em>Diaper</button><button data-q="sleep"><em>🌙</em>Sleep</button><button data-q="wake"><em>☀️</em>Woke up</button></div>
+<div id="list"></div>
+<h3>Milk over the last 7 days</h3><div class="chart" id="chart"></div>
+<div class="tools"><button id="exp">⬇️ Export CSV</button><label>⬆️ Import CSV<input type="file" id="imp" accept=".csv" hidden></label></div>
+</div>
+<button class="fab" id="add">＋ Add entry</button>
+<div class="modal" id="modal"><div class="sheet"><b class="serif" id="fT" style="font-size:18px"></b><div id="fBody"></div>
+<div class="acts"><button id="fDel" style="color:#c0392b">Delete</button><button id="fCancel">Cancel</button><button class="p" id="fSave">Save</button></div></div></div>
+<script>
+const KEY="kayleeLog.v2",SKEY="kayleeLog.settings",H=36e5,M=6e4,OFF=8*H,$=id=>document.getElementById(id);
+let entries=JSON.parse(localStorage.getItem(KEY)||"[]");
+let settings=Object.assign({name:"Kaylee",birth:"2026-04-02"},JSON.parse(localStorage.getItem(SKEY)||"{}"));
+const save=()=>localStorage.setItem(KEY,JSON.stringify(entries));
+const sgDate=t=>new Date(t+OFF).toISOString().slice(0,10);
+const sgTime=t=>new Date(t+OFF).toISOString().slice(11,16);
+const sgHour=t=>new Date(t+OFF).getUTCHours();
+const dayStart=d=>Date.parse(d+"T00:00:00+08:00");
+const addDays=(d,n)=>sgDate(dayStart(d)+n*864e5);
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const fmtD=(d,y)=>{const[a,b,c]=d.split("-");return y?`${MON[b-1]} ${+c}, ${a}`:`${+c} ${MON[b-1]} ${a}`};
+const hm=ms=>{const m=Math.max(0,Math.round(ms/M));return`${Math.floor(m/60)}h ${m%60}m`};
+const hmin=ms=>{const m=Math.max(0,Math.round(ms/M));return`${Math.floor(m/60)}h ${m%60}min`};
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+let viewDay=sgDate(Date.now()),cur=null;
+const isFeed=e=>["bottle","breast","solids"].includes(e.type);
+function desc(e){switch(e.type){
+ case"bottle":return`🍼 ${e.ml||0} ml ${e.milk==="formula"?"formula":"breast milk"}`;
+ case"breast":return`🤱 Breastfeed${e.mins?` · ${e.mins} min`:""}`;
+ case"solids":return`🥣 Solids${e.food?` · ${esc(e.food)}`:""}`;
+ case"diaper":return`🧷 Diaper · ${e.kind==="both"?"wet + poo":e.kind}`;
+ case"sleep":return`${e.sleep==="night"?"🌙 Bedtime":"😴 Nap"}${e.end?` until ${sgTime(e.end)} (${hm(e.end-e.time)})`:" · ongoing"}`}}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
+function stats(day){const d=entries.filter(e=>sgDate(e.time)===day),now=Date.now();
+ const naps=d.filter(e=>e.type==="sleep"&&e.sleep!=="night");
+ const napMs=naps.reduce((a,e)=>a+((e.end||Math.min(now,dayStart(day)+864e5))-e.time),0);
+ // night total: night sleep that ended (woke) on this day
+ const night=entries.find(e=>e.type==="sleep"&&e.sleep==="night"&&e.end&&sgDate(e.end)===day);
+ const nightMs=night?night.end-night.time:null;
+ return{milk:d.filter(e=>e.type==="bottle").reduce((a,e)=>a+(+e.ml||0),0),
+  feeds:d.filter(e=>e.type==="bottle"||e.type==="breast").length,solids:d.filter(e=>e.type==="solids").length,
+  wet:d.filter(e=>e.type==="diaper"&&e.kind!=="poo").length,poo:d.filter(e=>e.type==="diaper"&&e.kind!=="wet").length,
+  naps:naps.length,napMs,nightMs,list:d.sort((a,b)=>b.time-a.time)}}
+function age(){const b=settings.birth,t=sgDate(Date.now());const[by,bm,bd]=b.split("-").map(Number),[ty,tm,td]=t.split("-").map(Number);
+ let mo=(ty-by)*12+tm-bm,dd=td-bd;if(dd<0){mo--;dd+=new Date(Date.UTC(ty,tm-1,0)).getUTCDate()}
+ const n=Math.round((dayStart(t)-dayStart(b))/864e5)+1;return`${mo} month${mo==1?"":"s"} ${dd} day${dd==1?"":"s"} old (day ${n})`}
+function render(){const now=Date.now(),today=sgDate(now),s=stats(viewDay);
+ $("name").textContent=settings.name;document.title=settings.name+"'s Daily Log";
+ $("born").textContent=`Born ${fmtD(settings.birth)} · ${age()}`;
+ const f=entries.filter(isFeed).filter(e=>e.time<=now).sort((a,b)=>b.time-a.time)[0];
+ $("since").textContent=f?`${hm(now-f.time)} since last feed`:"No feed yet";
+ $("sinceM").innerHTML=f?`${desc(f)} at ${sgTime(f.time)}${sgDate(f.time)!==today?" · "+fmtD(sgDate(f.time)):""}`:"Log a feed to start the timer.";
+ const nm=Math.round(s.napMs/M),lo=210,hi=270;$("napMin").textContent=nm+" min";
+ $("napT").textContent=`Target 3.5–4.5 hours · ${s.naps} nap${s.naps==1?"":"s"}`;
+ $("napPill").textContent=nm>=lo?"Target reached":`${hm((lo-nm)*M)} to go`;
+ $("napBar").style.width=Math.min(100,nm/360*100)+"%";
+ $("dayL").textContent=viewDay===today?"Today":viewDay===addDays(today,-1)?"Yesterday":"";$("dayD").textContent=fmtD(viewDay,1);
+ $("next").disabled=viewDay>=today;
+ const sl=s.napMs+(s.nightMs||0);
+ $("tiles").innerHTML=[[s.milk+" ml","Milk total"],[s.feeds,"Feeds"],[s.solids,"Solids"],[s.wet,"Wet diapers"],[s.poo,"Poo diapers"],[(Math.round(sl/H*10)/10)+"h","Sleep"]].map(([v,l])=>`<div class="tile"><b>${v}</b><span>${l}</span></div>`).join("");
+ $("sleepC").innerHTML=`<div class="row"><b>🌙 Total sleep</b><b>${hmin(sl)}${s.nightMs==null?"+":""}</b></div>
+ <div class="row"><span class="dk">Night total ${s.nightMs==null?'<span class="note">bedtime or wake-up not logged</span>':'<span class="note">bedtime to wake-up</span>'}</span><b>${s.nightMs==null?"–":hmin(s.nightMs)}</b></div>
+ <div class="row"><span class="dk">Nap total</span><b>${hmin(s.napMs)}</b></div>`;
+ $("list").innerHTML=s.list.length?`<div class="card">${s.list.map(e=>`<div class="ent"><span class="t">${sgTime(e.time)}</span><span class="d">${desc(e)}${e.note?`<br><span class="note">${esc(e.note)}</span>`:""}</span><button data-e="${e.id}" title="Edit">✏️</button><button data-x="${e.id}" title="Delete">🗑️</button></div>`).join("")}</div>`:`<div class="empty">Nothing logged for this day yet. Tap Add entry.</div>`;
+ const days=[...Array(7)].map((_,i)=>addDays(viewDay,i-6)),d=days.map(x=>stats(x).milk),mx=Math.max(1,...d);
+ $("chart").innerHTML=days.map((x,i)=>`<div><s>${d[i]||""}</s><i style="height:${d[i]/mx*80}%"></i>${"SMTWTFS"[new Date(dayStart(x)+OFF).getUTCDay()]}</div>`).join("")}
+function seg(name,opts,val){return`<label>${name}</label><div class="seg" data-seg="${name}">${opts.map(o=>`<button type="button" data-v="${o[0]}" class="${o[0]===val?"on":""}">${o[1]}</button>`).join("")}</div>`}
+const dtv=t=>t?sgDate(t)+"T"+sgTime(t):"";
+const pdt=v=>v?Date.parse(v+":00+08:00"):null;
+const TYPES=[["bottle","🍼 Bottle"],["breast","🤱 Breast"],["solids","🥣 Solids"],["diaper","🧷 Diaper"],["sleep","🌙 Sleep"]];
+function defaultTime(){const n=Date.now();return viewDay===sgDate(n)?n:dayStart(viewDay)+12*H}
+function openForm(type,e){const t=e?e.time:defaultTime();
+ cur=e?{...e}:{type,time:t,ml:120,milk:"breast",kind:"wet",sleep:sgHour(t)>=19||sgHour(t)<5?"night":"nap"};
+ $("fT").textContent=e?"Edit entry":"Add entry";$("fDel").style.display=e?"":"none";$("modal").classList.add("on");drawForm()}
+function drawForm(){const c=cur;let h=e=>"";
+ let b=(cur.id?"":seg("Type",TYPES,c.type))+`<label>${c.type==="sleep"?"Start":"Time"}</label><input type="datetime-local" id="fTime" value="${dtv(c.time)}">`;
+ if(c.type==="bottle")b+=`<label>Amount (ml)</label><input type="number" id="fMl" min="0" step="10" value="${c.ml||""}">`+seg("Milk",[["breast","Breast milk"],["formula","Formula"]],c.milk);
+ if(c.type==="breast")b+=`<label>Duration (min, optional)</label><input type="number" id="fMins" value="${c.mins||""}">`;
+ if(c.type==="solids")b+=`<label>Food</label><input id="fFood" value="${esc(c.food||"")}">`;
+ if(c.type==="diaper")b+=seg("Kind",[["wet","Wet"],["poo","Poo"],["both","Both"]],c.kind);
+ if(c.type==="sleep")b+=seg("Sleep",[["nap","Nap"],["night","Bedtime"]],c.sleep)+`<label>Woke up (leave blank if still asleep)</label><input type="datetime-local" id="fEnd" value="${dtv(c.end)}">`;
+ b+=`<label>Note</label><input id="fNote" value="${esc(c.note||"")}">`;$("fBody").innerHTML=b}
+function readForm(){const c=cur,v=id=>$(id)&&$(id).value;c.time=pdt(v("fTime"))||c.time;c.note=v("fNote")||"";
+ if(c.type==="bottle")c.ml=+v("fMl")||0;if(c.type==="breast")c.mins=+v("fMins")||0;if(c.type==="solids")c.food=v("fFood");
+ if(c.type==="sleep"){c.end=pdt(v("fEnd"));if(c.end&&c.end<=c.time)c.end=null}}
+$("fBody").onclick=ev=>{const bt=ev.target.closest("[data-v]");if(!bt)return;readForm();const k=bt.parentNode.dataset.seg,v=bt.dataset.v;
+ if(k==="Type")cur.type=v;if(k==="Milk")cur.milk=v;if(k==="Kind")cur.kind=v;if(k==="Sleep")cur.sleep=v;drawForm()};
+$("fSave").onclick=()=>{readForm();const c={...cur};if(!c.id){c.id=uid();entries.push(c)}else entries=entries.map(e=>e.id===c.id?c:e);save();close_();viewDay=sgDate(c.time)>sgDate(Date.now())?viewDay:sgDate(c.time);render()};
+$("fDel").onclick=()=>{if(confirm("Delete this entry?")){entries=entries.filter(e=>e.id!==cur.id);save();close_();render()}};
+const close_=()=>$("modal").classList.remove("on");$("fCancel").onclick=close_;$("modal").onclick=e=>{if(e.target.id==="modal")close_()};
+$("add").onclick=()=>openForm("bottle");
+$("list").onclick=ev=>{const ed=ev.target.closest("[data-e]"),x=ev.target.closest("[data-x]");
+ if(ed)openForm(null,entries.find(e=>e.id===ed.dataset.e));
+ if(x&&confirm("Delete this entry?")){entries=entries.filter(e=>e.id!==x.dataset.x);save();render()}};
+document.querySelector(".quick").onclick=ev=>{const q=ev.target.closest("[data-q]");if(!q)return;const k=q.dataset.q;
+ if(k!=="wake")return openForm(k);
+ const open=entries.filter(e=>e.type==="sleep"&&!e.end).sort((a,b)=>b.time-a.time)[0],now=Date.now();
+ if(!open){alert("No open sleep to end. Log a Sleep first.");return}
+ open.end=now;if(sgHour(now)>=5&&sgHour(now)<11&&now-open.time>4*H)open.sleep="night";save();render()};
+$("prev").onclick=()=>{viewDay=addDays(viewDay,-1);render()};$("next").onclick=()=>{viewDay=addDays(viewDay,1);render()};
+$("gear").onclick=()=>{const n=prompt("Baby's name",settings.name);if(n===null)return;const b=prompt("Birth date (YYYY-MM-DD)",settings.birth);
+ if(b===null)return;if(!/^\d{4}-\d{2}-\d{2}$/.test(b)||isNaN(dayStart(b)))return alert("Invalid date");settings={name:n.trim()||"Baby",birth:b};localStorage.setItem(SKEY,JSON.stringify(settings));render()};
+const COLS=["id","type","time","end","ml","milk","kind","sleep","mins","food","note"];
+const q=v=>{v=v==null?"":String(v);return/[",\n]/.test(v)?`"${v.replace(/"/g,'""')}"`:v};
+$("exp").onclick=()=>{const rows=[COLS.join(",")].concat(entries.sort((a,b)=>a.time-b.time).map(e=>COLS.map(k=>q(k==="time"||k==="end"?(e[k]?dtv(e[k])+"+08:00":""):e[k])).join(",")));
+ const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([rows.join("\n")],{type:"text/csv"}));a.download=`${settings.name}-log-${sgDate(Date.now())}.csv`;a.click()};
+function parseCSV(t){const r=[];let row=[],f="",inq=false;for(let i=0;i<t.length;i++){const ch=t[i];
+ if(inq){if(ch=='"'){if(t[i+1]=='"'){f+='"';i++}else inq=false}else f+=ch}
+ else if(ch=='"')inq=true;else if(ch==","){row.push(f);f=""}else if(ch=="\n"||ch=="\r"){if(ch=="\r"&&t[i+1]=="\n")i++;row.push(f);r.push(row);row=[];f=""}else f+=ch}
+ if(f||row.length){row.push(f);r.push(row)}return r.filter(x=>x.some(Boolean))}
+$("imp").onchange=async ev=>{const file=ev.target.files[0];if(!file)return;const rows=parseCSV(await file.text()),hd=rows.shift()||[];let n=0;
+ const ids=new Set(entries.map(e=>e.id));
+ for(const r of rows){const o={};hd.forEach((h,i)=>o[h.trim()]=r[i]);const e={id:o.id||uid(),type:o.type,time:Date.parse(o.time)};
+  if(!TYPES.some(t=>t[0]===e.type)||isNaN(e.time))continue;
+  if(o.end)e.end=Date.parse(o.end)||null;["milk","kind","sleep","food","note"].forEach(k=>{if(o[k])e[k]=o[k]});if(o.ml)e.ml=+o.ml;if(o.mins)e.mins=+o.mins;
+  if(ids.has(e.id))entries=entries.map(x=>x.id===e.id?e:x);else{entries.push(e);ids.add(e.id)}n++}
+ save();render();alert(`Imported ${n} entries`);ev.target.value=""};
+render();setInterval(render,60000);
+</script></body></html>
