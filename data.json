@@ -1,1 +1,1420 @@
-[]
+[
+ {
+  "id": "bk-20261014-1330-solids-1",
+  "time": 1791955800000,
+  "type": "solids",
+  "food": "5 spoons",
+  "amount": "5 tsp",
+  "note": "5 tsp"
+ },
+ {
+  "id": "bk-20261014-1431-bottle-1",
+  "time": 1791959460000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261014-1445-bottle-1",
+  "time": 1791960300000,
+  "type": "bottle",
+  "ml": 50,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261014-1500-sleep-1",
+  "time": 1791961200000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1791965100000
+ },
+ {
+  "id": "bk-20261014-1645-solids-1",
+  "time": 1791967500000,
+  "type": "solids",
+  "food": "Oatmeal",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
+ },
+ {
+  "id": "bk-20261014-1725-bottle-1",
+  "time": 1791969900000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261014-1755-bottle-1",
+  "time": 1791971700000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261014-1900-bottle-1",
+  "time": 1791975600000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261014-1935-sleep-1",
+  "time": 1791977700000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792018500000
+ },
+ {
+  "id": "bk-20261014-2230-bottle-1",
+  "time": 1791988200000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261014-2300-bottle-1",
+  "time": 1791990000000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261015-0730-bottle-1",
+  "time": 1792020600000,
+  "type": "bottle",
+  "ml": 180,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261015-0830-sleep-1",
+  "time": 1792024200000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792027920000
+ },
+ {
+  "id": "bk-20261015-1000-solids-1",
+  "time": 1792029600000,
+  "type": "solids",
+  "food": "Solid",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
+ },
+ {
+  "id": "bk-20261015-1030-bottle-1",
+  "time": 1792031400000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261015-1045-bottle-1",
+  "time": 1792032300000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261015-1130-bottle-1",
+  "time": 1792035000000,
+  "type": "bottle",
+  "ml": 50,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261015-1155-sleep-1",
+  "time": 1792036500000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792043400000
+ },
+ {
+  "id": "bk-20261015-1430-solids-1",
+  "time": 1792045800000,
+  "type": "solids",
+  "food": "Solid",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
+ },
+ {
+  "id": "bk-20261015-1600-bottle-1",
+  "time": 1792051200000,
+  "type": "bottle",
+  "ml": 130,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261015-1630-sleep-1",
+  "time": 1792053000000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792055520000
+ },
+ {
+  "id": "bk-20261015-1745-solids-1",
+  "time": 1792057500000,
+  "type": "solids",
+  "food": "Broccoli, first try",
+  "note": "spat out"
+ },
+ {
+  "id": "bk-20261015-1900-bottle-1",
+  "time": 1792062000000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261015-1930-bottle-1",
+  "time": 1792063800000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261015-2010-sleep-1",
+  "time": 1792066200000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792107300000
+ },
+ {
+  "id": "bk-20261016-0100-bottle-1",
+  "time": 1792083600000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261016-0755-bottle-1",
+  "time": 1792108500000,
+  "type": "bottle",
+  "ml": 160,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261016-0850-sleep-1",
+  "time": 1792111800000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792114200000
+ },
+ {
+  "id": "bk-20261016-1000-solids-1",
+  "time": 1792116000000,
+  "type": "solids",
+  "food": "Oatmeal cereal",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
+ },
+ {
+  "id": "bk-20261016-1040-bottle-1",
+  "time": 1792118400000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261016-1125-bottle-1",
+  "time": 1792121100000,
+  "type": "bottle",
+  "ml": 110,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261016-1155-sleep-1",
+  "time": 1792122900000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792130700000
+ },
+ {
+  "id": "bk-20261016-1530-bottle-1",
+  "time": 1792135800000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261016-1550-bottle-1",
+  "time": 1792137000000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261016-1620-sleep-1",
+  "time": 1792138800000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792141680000
+ },
+ {
+  "id": "bk-20261016-1900-bottle-1",
+  "time": 1792148400000,
+  "type": "bottle",
+  "ml": 70,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261016-1910-sleep-1",
+  "time": 1792149000000,
+  "type": "sleep",
+  "sleep": "nap",
+  "note": "Evening catnap",
+  "end": 1792152000000
+ },
+ {
+  "id": "bk-20261016-2000-bottle-1",
+  "time": 1792152000000,
+  "type": "bottle",
+  "ml": 70,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261016-2040-sleep-1",
+  "time": 1792154400000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792190400000
+ },
+ {
+  "id": "bk-20261017-0115-bottle-1",
+  "time": 1792170900000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261017-0645-bottle-1",
+  "time": 1792190700000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261017-0725-bottle-1",
+  "time": 1792193100000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261017-0750-sleep-1",
+  "time": 1792194600000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792197300000
+ },
+ {
+  "id": "bk-20261017-0855-solids-1",
+  "time": 1792198500000,
+  "type": "solids",
+  "food": "Oatmeal cereal",
+  "amount": "3 tsp",
+  "note": "3 tsp"
+ },
+ {
+  "id": "bk-20261017-0950-bottle-1",
+  "time": 1792201800000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261017-1005-bottle-1",
+  "time": 1792202700000,
+  "type": "bottle",
+  "ml": 50,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261017-1030-sleep-1",
+  "time": 1792204200000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792207200000
+ },
+ {
+  "id": "bk-20261017-1245-bottle-1",
+  "time": 1792212300000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261017-1255-bottle-1",
+  "time": 1792212900000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261017-1350-sleep-1",
+  "time": 1792216200000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792221600000
+ },
+ {
+  "id": "bk-20261017-1600-bottle-1",
+  "time": 1792224000000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261017-1630-bottle-1",
+  "time": 1792225800000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261017-1715-sleep-1",
+  "time": 1792228500000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792230300000
+ },
+ {
+  "id": "bk-20261017-1800-solids-1",
+  "time": 1792231200000,
+  "type": "solids",
+  "food": "Mashed avocado, first try"
+ },
+ {
+  "id": "bk-20261017-1900-bottle-1",
+  "time": 1792234800000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261017-1958-sleep-1",
+  "time": 1792238280000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792279800000
+ },
+ {
+  "id": "bk-20261017-2300-bottle-1",
+  "time": 1792249200000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261018-0400-bottle-1",
+  "time": 1792267200000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261018-0825-bottle-1",
+  "time": 1792283100000,
+  "type": "bottle",
+  "ml": 110,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261018-0850-bottle-1",
+  "time": 1792284600000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261018-0930-sleep-1",
+  "time": 1792287000000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792288620000
+ },
+ {
+  "id": "bk-20261018-1050-solids-1",
+  "time": 1792291800000,
+  "type": "solids",
+  "food": "Oatmeal cereal with banana",
+  "amount": "1 tsp",
+  "note": "1 tsp"
+ },
+ {
+  "id": "bk-20261018-1200-bottle-1",
+  "time": 1792296000000,
+  "type": "bottle",
+  "ml": 110,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261018-1215-sleep-1",
+  "time": 1792296900000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792299000000
+ },
+ {
+  "id": "bk-20261018-1320-solids-1",
+  "time": 1792300800000,
+  "type": "solids",
+  "food": "Rice cereal",
+  "amount": "2 tsp",
+  "note": "2 tsp"
+ },
+ {
+  "id": "bk-20261018-1415-bottle-1",
+  "time": 1792304100000,
+  "type": "bottle",
+  "ml": 70,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261018-1450-bottle-1",
+  "time": 1792306200000,
+  "type": "bottle",
+  "ml": 30,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261018-1515-sleep-1",
+  "time": 1792307700000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792311300000
+ },
+ {
+  "id": "bk-20261018-1700-solids-1",
+  "time": 1792314000000,
+  "type": "solids",
+  "food": "Rice cereal with carrot",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
+ },
+ {
+  "id": "bk-20261018-1830-bottle-1",
+  "time": 1792319400000,
+  "type": "bottle",
+  "ml": 70,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261018-1850-bottle-1",
+  "time": 1792320600000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261018-1855-sleep-1",
+  "time": 1792320900000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792358100000
+ },
+ {
+  "id": "bk-20261018-2335-bottle-1",
+  "time": 1792337700000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261019-0530-bottle-1",
+  "time": 1792359000000,
+  "type": "bottle",
+  "ml": 0,
+  "milk": "breast",
+  "note": "leftover, amount not recorded"
+ },
+ {
+  "id": "bk-20261019-0630-bottle-1",
+  "time": 1792362600000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261019-0655-sleep-1",
+  "time": 1792364100000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792366800000
+ },
+ {
+  "id": "bk-20261019-0815-solids-1",
+  "time": 1792368900000,
+  "type": "solids",
+  "food": "Oatmeal cereal with 1/8 egg (first egg), 8:15-8:30am",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
+ },
+ {
+  "id": "bk-20261019-0925-bottle-1",
+  "time": 1792373100000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261019-0950-bottle-1",
+  "time": 1792374600000,
+  "type": "bottle",
+  "ml": 30,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261019-0950-sleep-1",
+  "time": 1792374600000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792378200000
+ },
+ {
+  "id": "bk-20261019-1130-solids-1",
+  "time": 1792380600000,
+  "type": "solids",
+  "food": "Rice cereal with 1/2 stem broccoli, 11:30-11:40am",
+  "amount": "0.5 tbsp",
+  "note": "0.5 tbsp"
+ },
+ {
+  "id": "bk-20261019-1220-bottle-1",
+  "time": 1792383600000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261019-1245-bottle-1",
+  "time": 1792385100000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261019-1250-sleep-1",
+  "time": 1792385400000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792391220000
+ },
+ {
+  "id": "bk-20261019-1530-bottle-1",
+  "time": 1792395000000,
+  "type": "bottle",
+  "ml": 70,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261019-1605-bottle-1",
+  "time": 1792397100000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261019-1615-sleep-1",
+  "time": 1792397700000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792400400000
+ },
+ {
+  "id": "bk-20261019-1725-solids-1",
+  "time": 1792401900000,
+  "type": "solids",
+  "food": "Rice cereal",
+  "amount": "0.5 tbsp",
+  "note": "0.5 tbsp"
+ },
+ {
+  "id": "bk-20261019-1810-bottle-1",
+  "time": 1792404600000,
+  "type": "bottle",
+  "ml": 10,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261019-1900-bottle-1",
+  "time": 1792407600000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261019-1915-sleep-1",
+  "time": 1792408500000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792450200000
+ },
+ {
+  "id": "bk-20261019-2200-bottle-1",
+  "time": 1792418400000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261020-0415-bottle-1",
+  "time": 1792440900000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261020-0730-bottle-1",
+  "time": 1792452600000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261020-0820-sleep-1",
+  "time": 1792455600000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792458600000
+ },
+ {
+  "id": "bk-20261020-0940-solids-1",
+  "time": 1792460400000,
+  "type": "solids",
+  "food": "Oatmeal cereal with 1/8 egg, 9:40-9:50am",
+  "amount": "0.75 tbsp",
+  "note": "0.75 tbsp"
+ },
+ {
+  "id": "bk-20261020-1050-bottle-1",
+  "time": 1792464600000,
+  "type": "bottle",
+  "ml": 110,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261020-1116-bottle-1",
+  "time": 1792466160000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261020-1135-sleep-1",
+  "time": 1792467300000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792470000000
+ },
+ {
+  "id": "bk-20261020-1345-bottle-1",
+  "time": 1792475100000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261020-1400-bottle-1",
+  "time": 1792476000000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261020-1415-sleep-1",
+  "time": 1792476900000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792484700000
+ },
+ {
+  "id": "bk-20261020-1645-bottle-1",
+  "time": 1792485900000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261021-1710-sleep-1",
+  "time": 1792573800000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792574700000
+ },
+ {
+  "id": "bk-20261021-1855-bottle-1",
+  "time": 1792580100000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261021-1915-sleep-1",
+  "time": 1792581300000,
+  "type": "sleep",
+  "sleep": "night"
+ },
+ {
+  "id": "bk-20261021-1925-bottle-1",
+  "time": 1792581900000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261021-2150-bottle-1",
+  "time": 1792590600000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261022-0400-bottle-1",
+  "time": 1792612800000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261022-0745-bottle-1",
+  "time": 1792626300000,
+  "type": "bottle",
+  "ml": 150,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261022-0825-sleep-1",
+  "time": 1792628700000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792632000000
+ },
+ {
+  "id": "bk-20261022-1000-solids-1",
+  "time": 1792634400000,
+  "type": "solids",
+  "food": "Oatmeal cereal with 1/2 egg yolk",
+  "amount": "0.5 tbsp",
+  "note": "0.5 tbsp"
+ },
+ {
+  "id": "bk-20261022-1115-bottle-1",
+  "time": 1792638900000,
+  "type": "bottle",
+  "ml": 110,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261022-1145-bottle-1",
+  "time": 1792640700000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261022-1205-sleep-1",
+  "time": 1792641900000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792647300000
+ },
+ {
+  "id": "bk-20261022-1415-solids-1",
+  "time": 1792649700000,
+  "type": "solids",
+  "food": "Rice cereal with carrot puree"
+ },
+ {
+  "id": "bk-20261022-1530-bottle-1",
+  "time": 1792654200000,
+  "type": "bottle",
+  "ml": 110,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261022-1600-bottle-1",
+  "time": 1792656000000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261022-1625-sleep-1",
+  "time": 1792657500000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792659600000
+ },
+ {
+  "id": "bk-20261022-1900-note-1",
+  "time": 1792666800000,
+  "type": "note",
+  "note": "Milestones at 6 months: sits up straight, crawls, rolls over, has 1 tooth"
+ },
+ {
+  "id": "bk-20261022-1930-sleep-1",
+  "time": 1792668600000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792707000000
+ },
+ {
+  "id": "bk-20261022-2015-bottle-1",
+  "time": 1792671300000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261022-2030-bottle-1",
+  "time": 1792672200000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261023-0315-bottle-1",
+  "time": 1792696500000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261023-0700-bottle-1",
+  "time": 1792710000000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261023-0725-sleep-1",
+  "time": 1792711500000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792714200000
+ },
+ {
+  "id": "bk-20261023-0900-solids-1",
+  "time": 1792717200000,
+  "type": "solids",
+  "food": "Oatmeal cereal with 1/2 egg yolk",
+  "amount": "0.5 tbsp",
+  "note": "0.5 tbsp"
+ },
+ {
+  "id": "bk-20261023-0955-bottle-1",
+  "time": 1792720500000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261023-1030-bottle-1",
+  "time": 1792722600000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261023-1035-sleep-1",
+  "time": 1792722900000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792726800000
+ },
+ {
+  "id": "bk-20261023-1230-solids-1",
+  "time": 1792729800000,
+  "type": "solids",
+  "food": "Rice cereal with pumpkin (first pumpkin), 12:30-12:45pm",
+  "amount": "1 tsp",
+  "note": "1 tsp"
+ },
+ {
+  "id": "bk-20261023-1330-bottle-1",
+  "time": 1792733400000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261023-1355-bottle-1",
+  "time": 1792734900000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261023-1400-sleep-1",
+  "time": 1792735200000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792743300000
+ },
+ {
+  "id": "bk-20261023-1740-bottle-1",
+  "time": 1792748400000,
+  "type": "bottle",
+  "ml": 110,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261023-1800-bottle-1",
+  "time": 1792749600000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261023-1905-sleep-1",
+  "time": 1792753500000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792796400000
+ },
+ {
+  "id": "bk-20261023-2045-bottle-1",
+  "time": 1792759500000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261023-2315-wake-1",
+  "time": 1792768500000,
+  "type": "wake",
+  "note": "night waking; Awake about an hour, back to sleep at 12:15am"
+ },
+ {
+  "id": "bk-20261023-2315-bottle-1",
+  "time": 1792768500000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261024-0755-bottle-1",
+  "time": 1792799700000,
+  "type": "bottle",
+  "ml": 170,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261024-0830-sleep-1",
+  "time": 1792801800000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792804500000
+ },
+ {
+  "id": "bk-20261024-0945-solids-1",
+  "time": 1792806300000,
+  "type": "solids",
+  "food": "Oatmeal cereal with 1/2 egg yolk, 9:45-10:00am"
+ },
+ {
+  "id": "bk-20261024-1105-bottle-1",
+  "time": 1792811100000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261024-1135-bottle-1",
+  "time": 1792812900000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261024-1235-sleep-1",
+  "time": 1792816500000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792817700000
+ },
+ {
+  "id": "bk-20261024-1400-sleep-1",
+  "time": 1792821600000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792823400000
+ },
+ {
+  "id": "bk-20261024-1525-bottle-1",
+  "time": 1792826700000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261024-1630-sleep-1",
+  "time": 1792830600000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792835220000
+ },
+ {
+  "id": "bk-20261024-1800-solids-1",
+  "time": 1792836000000,
+  "type": "solids",
+  "food": "Pumpkin with rice cereal",
+  "amount": "0.5 tbsp",
+  "note": "0.5 tbsp"
+ },
+ {
+  "id": "bk-20261024-1925-bottle-1",
+  "time": 1792841100000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261024-1940-bottle-1",
+  "time": 1792842000000,
+  "type": "bottle",
+  "ml": 30,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261024-2015-sleep-1",
+  "time": 1792844100000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792881900000
+ },
+ {
+  "id": "bk-20261024-2330-bottle-1",
+  "time": 1792855800000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261025-0730-bottle-1",
+  "time": 1792884600000,
+  "type": "bottle",
+  "ml": 150,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261025-0810-sleep-1",
+  "time": 1792887000000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792889880000
+ },
+ {
+  "id": "bk-20261025-0915-solids-1",
+  "time": 1792890900000,
+  "type": "solids",
+  "food": "Oatmeal cereal with 1/2 egg yolk",
+  "amount": "0.5 tbsp",
+  "note": "0.5 tbsp"
+ },
+ {
+  "id": "bk-20261025-1040-bottle-1",
+  "time": 1792896000000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261025-1100-bottle-1",
+  "time": 1792897200000,
+  "type": "bottle",
+  "ml": 50,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261025-1115-sleep-1",
+  "time": 1792898100000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792905300000
+ },
+ {
+  "id": "bk-20261025-1330-solids-1",
+  "time": 1792906200000,
+  "type": "solids",
+  "food": "Pumpkin puree",
+  "amount": "2 tsp",
+  "note": "2 tsp"
+ },
+ {
+  "id": "bk-20261025-1400-bottle-1",
+  "time": 1792908000000,
+  "type": "bottle",
+  "ml": 30,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261025-1430-bottle-1",
+  "time": 1792909800000,
+  "type": "bottle",
+  "ml": 150,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261025-1600-sleep-1",
+  "time": 1792915200000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792917900000
+ },
+ {
+  "id": "bk-20261025-1730-solids-1",
+  "time": 1792920600000,
+  "type": "solids",
+  "food": "Rice cereal",
+  "amount": "2 tsp",
+  "note": "2 tsp"
+ },
+ {
+  "id": "bk-20261025-1900-bottle-1",
+  "time": 1792926000000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261025-1920-sleep-1",
+  "time": 1792927200000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1792961820000,
+  "note": "woke Early wake, back to sleep at 6:00am"
+ },
+ {
+  "id": "bk-20261025-1955-bottle-1",
+  "time": 1792929300000,
+  "type": "bottle",
+  "ml": 50,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261026-0005-bottle-1",
+  "time": 1792944300000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261026-0500-bottle-1",
+  "time": 1792962000000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261026-0600-sleep-1",
+  "time": 1792965600000,
+  "type": "sleep",
+  "sleep": "nap",
+  "note": "Back to sleep after early wake",
+  "end": 1792974300000
+ },
+ {
+  "id": "bk-20261026-0835-bottle-1",
+  "time": 1792974900000,
+  "type": "bottle",
+  "ml": 70,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261026-0910-bottle-1",
+  "time": 1792977000000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261026-0945-bottle-1",
+  "time": 1792979100000,
+  "type": "bottle",
+  "ml": 30,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261026-1000-sleep-1",
+  "time": 1792980000000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792983180000
+ },
+ {
+  "id": "bk-20261026-1130-solids-1",
+  "time": 1792985400000,
+  "type": "solids",
+  "food": "Oatmeal cereal with 1/2 egg yolk",
+  "amount": "2 tsp",
+  "note": "2 tsp; ate 5 mouthfuls"
+ },
+ {
+  "id": "bk-20261026-1233-bottle-1",
+  "time": 1792989180000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261026-1300-bottle-1",
+  "time": 1792990800000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261026-1315-sleep-1",
+  "time": 1792991700000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1792994400000
+ },
+ {
+  "id": "bk-20261026-1515-solids-1",
+  "time": 1792998900000,
+  "type": "solids",
+  "food": "Pumpkin puree",
+  "amount": "3 tsp",
+  "note": "3 tsp"
+ },
+ {
+  "id": "bk-20261026-1555-bottle-1",
+  "time": 1793001300000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261026-1610-bottle-1",
+  "time": 1793002200000,
+  "type": "bottle",
+  "ml": 30,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261026-1610-sleep-1",
+  "time": 1793002200000,
+  "type": "sleep",
+  "sleep": "nap",
+  "note": "Wake-up time not logged"
+ },
+ {
+  "id": "bk-20261026-1840-bottle-1",
+  "time": 1793011200000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261026-1900-bottle-1",
+  "time": 1793012400000,
+  "type": "bottle",
+  "ml": 30,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261026-1905-diaper-1",
+  "time": 1793012700000,
+  "type": "diaper",
+  "kind": "poo"
+ },
+ {
+  "id": "bk-20261026-1915-sleep-1",
+  "time": 1793013300000,
+  "type": "sleep",
+  "sleep": "night",
+  "end": 1793057100000
+ },
+ {
+  "id": "bk-20261026-2030-bottle-1",
+  "time": 1793017800000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261026-2350-bottle-1",
+  "time": 1793029800000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261027-0400-bottle-1",
+  "time": 1793044800000,
+  "type": "bottle",
+  "ml": 50,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261027-0735-bottle-1",
+  "time": 1793057700000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261027-0755-bottle-1",
+  "time": 1793058900000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "formula"
+ },
+ {
+  "id": "bk-20261027-0800-diaper-1",
+  "time": 1793059200000,
+  "type": "diaper",
+  "kind": "poo"
+ },
+ {
+  "id": "bk-20261027-0830-bottle-1",
+  "time": 1793061000000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261027-0900-sleep-1",
+  "time": 1793062800000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1793065200000
+ },
+ {
+  "id": "bk-20261027-1015-solids-1",
+  "time": 1793067300000,
+  "type": "solids",
+  "food": "Oatmeal with 1/2 egg yolk, 10:15-10:30am",
+  "amount": "0.25 tbsp",
+  "note": "0.25 tbsp"
+ },
+ {
+  "id": "bk-20261027-1045-bottle-1",
+  "time": 1793069100000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261027-1125-bottle-1",
+  "time": 1793071500000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261027-1155-bottle-1",
+  "time": 1793073300000,
+  "type": "bottle",
+  "ml": 40,
+  "milk": "breast"
+ },
+ {
+  "id": "bk-20261027-1210-sleep-1",
+  "time": 1793074200000,
+  "type": "sleep",
+  "sleep": "nap"
+ }
+]

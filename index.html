@@ -90,7 +90,7 @@ function desc(e){switch(e.type){
  case"pump":return`🫙 Pumped ${e.ml||0} ml${e.mins?` · ${e.mins} min`:""}`;
  case"bath":return`🛁 Bath`;
  case"weight":return`⚖️ Weight ${(+e.kg).toFixed(3)} kg`;
- case"wake":return`☀️ Wake up`;
+ case"wake":return`☀️ Wake up`;case"note":return`📝 Note`;
  case"temp":return`🌡️ <span class="${e.temp>=37.5?"hot":""}">${e.temp} °C</span>`;
  case"breast":return`🤱 Breastfeed${e.mins?` · ${e.mins} min`:""}`;
  case"solids":return`🥣 Solids${e.food?` · ${esc(e.food)}`:""}`;
