@@ -79,23 +79,23 @@ const dayStart=d=>Date.parse(d+"T00:00:00+08:00");
 const addDays=(d,n)=>sgDate(dayStart(d)+n*864e5);
 const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const fmtD=(d,y)=>{const[a,b,c]=d.split("-");return y?`${MON[b-1]} ${+c}, ${a}`:`${+c} ${MON[b-1]} ${a}`};
-const hm=ms=>{const m=Math.max(0,Math.round(ms/M));return`${Math.floor(m/60)}h ${m%60}m`};
-const hmin=ms=>{const m=Math.max(0,Math.round(ms/M));return`${Math.floor(m/60)}h ${m%60}min`};
+const hm=ms=>{const m=Math.max(0,Math.round(ms/M));return m<60?`${m}m`:`${Math.floor(m/60)}h ${m%60}m`};
+const hmin=ms=>hm(ms);
 const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
 let viewDay=sgDate(Date.now()),cur=null;
 const isFeed=e=>["bottle","breast","solids"].includes(e.type);
 const isLive=e=>{const now=Date.now();if(e.end||now-e.time>12*H||e.time>now)return false;return !entries.some(x=>x.time>e.time&&x.id!==e.id&&x.time<=now)};
 function desc(e){switch(e.type){
  case"bottle":return`🍼 ${e.ml!=null&&e.ml!==""?e.ml+" ml":"Amount ?"} ${e.milk==="formula"?"formula":"breast milk"}${e.end?` · until ${sgTime(e.end)}`:""}`;
- case"pump":return`🫙 Pumped ${e.ml||0} ml${e.mins?` · ${e.mins} min`:""}`;
+ case"pump":return`🫙 Pumped ${e.ml||0} ml${e.mins?` · ${hm(e.mins*M)}`:""}`;
  case"bath":return`🛁 Bath`;
  case"weight":return`⚖️ Weight ${(+e.kg).toFixed(3)} kg`;
  case"wake":return`☀️ Wake up`;case"note":return`📝 Note`;
  case"temp":return`🌡️ <span class="${e.temp>=37.5?"hot":""}">${e.temp} °C</span>`;
- case"breast":return`🤱 Breastfeed${e.mins?` · ${e.mins} min`:""}`;
+ case"breast":return`🤱 Breastfeed${e.mins?` · ${hm(e.mins*M)}`:""}`;
  case"solids":return`🥣 Solids${e.food?` · ${esc(e.food)}`:""}`;
  case"diaper":return`🧷 Diaper · ${e.kind==="both"?"wet + poo":e.kind}`;
- case"sleep":return`${e.sleep==="night"?"🌙 Bedtime":"😴 Nap"}${e.end?` until ${sgTime(e.end)} (${hm(e.end-e.time)})`:isLive(e)?" · ongoing":' · <span class="note">wake not logged</span>'}`}}
+ case"sleep":return`${e.sleep==="night"?"🌙 Bedtime":"😴 Nap"}${e.end?` until ${sgTime(e.end)} (${hm(e.end-e.time)})`:isLive(e)?` · <b style="color:#2f7d4f">ongoing</b> <span class="note">(${hm(Date.now()-e.time)} so far)</span>`:' · <span class="note">wake not logged</span>'}`}}
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
 function stats(day){const d=entries.filter(e=>sgDate(e.time)===day),now=Date.now();
  const naps=d.filter(e=>e.type==="sleep"&&e.sleep!=="night");
@@ -139,7 +139,7 @@ function render(){const now=Date.now(),today=sgDate(now),s=stats(viewDay);
  const bdN=bandFor(viewDay),nt=(bdN&&bdN.nap_total_h)||[4,6],loH=nt[0],hiH=nt[1];
  const nm=Math.round(s.napMs/M),lo=Math.round(loH*60),hi=Math.round(hiH*60),barMaxH=Math.max(6,hiH);
  const fh=h=>Number.isInteger(h)?String(h):String(h);
- $("napMin").textContent=nm+" min";
+ const lvN=s.list.find(e=>e.type==="sleep"&&e.sleep!=="night"&&!e.end&&isLive(e));$("napMin").textContent=hm(nm*M)+(lvN?` (incl. ongoing nap since ${sgTime(lvN.time)})`:"");
  $("napT").textContent=`Target ${fh(loH)}–${fh(hiH)} hours · ${s.naps} nap${s.naps==1?"":"s"}`;
  $("napPill").textContent=nm>=lo?"Target reached":`${hm((lo-nm)*M)} to go`;
  $("napBar").style.width=Math.min(100,nm/(barMaxH*60)*100)+"%";
