@@ -1429,5 +1429,19 @@
   "food": "pumpkin puree till 3pm",
   "amount": "1 tbsp",
   "note": "1 tbsp"
+ },
+ {
+  "id": "tg-6",
+  "time": 1793088600000,
+  "type": "bottle",
+  "ml": 50,
+  "milk": "breast"
+ },
+ {
+  "id": "tg-6-2",
+  "time": 1793089440000,
+  "type": "bottle",
+  "ml": 70,
+  "milk": "breast"
  }
 ]
