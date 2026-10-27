@@ -65,7 +65,7 @@ let entries=JSON.parse(localStorage.getItem(KEY)||"[]");
  for(const e of SEED.map(x=>({...x,sv:1})).concat(SEED2))if(e.sv>v&&!ids.has(e.id)){const o={...e};delete o.sv;entries.push(o)}localStorage.setItem(KEY,JSON.stringify(entries));localStorage.setItem(KEY+".seedVersion",SEED_VERSION)})();
 const NORMS={"_meta":{"disclaimer":"Typical ranges for healthy term infants; wide normal variation. Not medical advice.","notes":"Sleep: NHS (newborn ~8-18h), AASM/AAP 12-16h from 4-12mo. Milk: AAP ~75ml/lb/day (~150-165ml/kg/day), formula usually <=~960ml/day; HealthHub ~750ml/day at 6-12mo. Nap counts/wake windows are common clinical convention, not formal guideline.","sources":["https://aasm.org/resources/pdf/pediatricsleepdurationconsensus.pdf","https://www.nhs.uk/baby/caring-for-a-newborn/helping-your-baby-to-sleep/","https://www.healthychildren.org/English/ages-stages/baby/formula-feeding/Pages/amount-and-schedule-of-formula-feedings.aspx","https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/how-much-and-how-often.html","https://www.healthhub.sg/well-being-and-lifestyle/food-diet-and-nutrition/getting-baby-started-on-solids"]},"bands":[{"age":"0-1w","sleep_total_h":[14,18],"night_h":null,"naps":"no pattern","nap_total_h":[4,6],"wake_window_min":[30,60],"ml_per_feed":[30,60],"feeds_per_day":[8,12],"milk_ml_day":[150,500],"solids":"none"},{"age":"1-4w","sleep_total_h":[14,17],"night_h":null,"naps":"no pattern","nap_total_h":[4,6],"wake_window_min":[45,60],"ml_per_feed":[60,120],"feeds_per_day":[8,12],"milk_ml_day":[450,800],"solids":"none"},{"age":"4-8w","sleep_total_h":[14,17],"night_h":[8,9],"naps":"4-6","nap_total_h":[5,7],"wake_window_min":[60,90],"ml_per_feed":[90,150],"feeds_per_day":[7,10],"milk_ml_day":[600,900],"solids":"none"},{"age":"2-3m","sleep_total_h":[14,16],"night_h":[9,11],"naps":"4-5","nap_total_h":[4,6],"wake_window_min":[75,120],"ml_per_feed":[120,150],"feeds_per_day":[6,8],"milk_ml_day":[700,950],"solids":"none"},{"age":"4-5m","sleep_total_h":[12,16],"night_h":[10,12],"naps":"3-4","nap_total_h":[3,4],"wake_window_min":[90,150],"ml_per_feed":[120,180],"feeds_per_day":[5,7],"milk_ml_day":[700,950],"solids":"none (not before 4mo)"},{"age":"6-7m","sleep_total_h":[12,16],"night_h":[10,12],"naps":"2-3","nap_total_h":[2.5,3.5],"wake_window_min":[120,180],"ml_per_feed":[180,240],"feeds_per_day":[4,6],"milk_ml_day":[600,950],"solids":"start; smooth puree/iron-fortified cereal; 1-2 tsp up to 1-2 tbsp, 1->2-3x/day"},{"age":"8-9m","sleep_total_h":[12,16],"night_h":[10,12],"naps":"2","nap_total_h":[2,3.5],"wake_window_min":[150,210],"ml_per_feed":[180,240],"feeds_per_day":[3,5],"milk_ml_day":[600,850],"solids":"thicker/coarser mash; 2-3 meals + snack; all food groups"},{"age":"10-12m","sleep_total_h":[12,16],"night_h":[10,12],"naps":"1-2","nap_total_h":[2,3],"wake_window_min":[180,240],"ml_per_feed":[180,240],"feeds_per_day":[3,4],"milk_ml_day":[500,750],"solids":"mashed/chopped/finger foods; 3 meals + 1-2 snacks"}]};
 let settings=Object.assign({name:"Kaylee",birth:"2026-04-02"},JSON.parse(localStorage.getItem(SKEY)||"{}"));
-const save=()=>localStorage.setItem(KEY,JSON.stringify(entries));
+const save=()=>localStorage.setItem(KEY,JSON.stringify(entries));const DKEY=KEY+".deleted",delIds=new Set(JSON.parse(localStorage.getItem(DKEY)||"[]")),markDel=id=>{delIds.add(id);localStorage.setItem(DKEY,JSON.stringify([...delIds]))};
 const sgDate=t=>new Date(t+OFF).toISOString().slice(0,10);
 const sgTime=t=>new Date(t+OFF).toISOString().slice(11,16);
 const sgHour=t=>new Date(t+OFF).getUTCHours();
@@ -179,12 +179,12 @@ function readForm(){const c=cur,v=id=>$(id)&&$(id).value;c.time=pdt(v("fTime"))|
 $("fBody").onclick=ev=>{const bt=ev.target.closest("[data-v]");if(!bt)return;readForm();const k=bt.parentNode.dataset.seg,v=bt.dataset.v;
  if(k==="Type")cur.type=v;if(k==="Milk")cur.milk=v;if(k==="Kind")cur.kind=v;if(k==="Sleep")cur.sleep=v;drawForm()};
 $("fSave").onclick=()=>{readForm();const c={...cur};if(!c.id){c.id=uid();entries.push(c)}else entries=entries.map(e=>e.id===c.id?c:e);save();close_();viewDay=sgDate(c.time)>sgDate(Date.now())?viewDay:sgDate(c.time);render()};
-$("fDel").onclick=()=>{if(confirm("Delete this entry?")){entries=entries.filter(e=>e.id!==cur.id);save();close_();render()}};
+$("fDel").onclick=()=>{if(confirm("Delete this entry?")){markDel(cur.id);entries=entries.filter(e=>e.id!==cur.id);save();close_();render()}};
 const close_=()=>$("modal").classList.remove("on");$("fCancel").onclick=close_;$("modal").onclick=e=>{if(e.target.id==="modal")close_()};
 $("add").onclick=()=>openForm("bottle");
 $("list").onclick=ev=>{const ed=ev.target.closest("[data-e]"),x=ev.target.closest("[data-x]");
  if(ed)openForm(null,entries.find(e=>e.id===ed.dataset.e));
- if(x&&confirm("Delete this entry?")){entries=entries.filter(e=>e.id!==x.dataset.x);save();render()}};
+ if(x&&confirm("Delete this entry?")){markDel(x.dataset.x);entries=entries.filter(e=>e.id!==x.dataset.x);save();render()}};
 document.querySelector(".quick").onclick=ev=>{const q=ev.target.closest("[data-q]");if(!q)return;const k=q.dataset.q;
  if(k!=="wake")return openForm(k);
  const open=entries.filter(e=>e.type==="sleep"&&!e.end&&Date.now()-e.time<12*H).sort((a,b)=>b.time-a.time)[0],now=Date.now();
@@ -210,4 +210,5 @@ $("imp").onchange=async ev=>{const file=ev.target.files[0];if(!file)return;const
  save();render();alert(`Imported ${n} entries`);ev.target.value=""};
 $("band").checked=localStorage.getItem(KEY+".showBand")!=="0";$("band").onchange=render;
 render();setInterval(render,60000);
+fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).then(d=>{if(!Array.isArray(d))return;const ids=new Set(entries.map(e=>e.id));let n=0;for(const e of d)if(e&&e.id&&!ids.has(e.id)&&!delIds.has(e.id)){entries.push(e);ids.add(e.id);n++}if(n){save();render()}}).catch(()=>{});
 </script></body></html>
