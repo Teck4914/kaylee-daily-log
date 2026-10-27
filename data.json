@@ -1462,5 +1462,12 @@
   "food": "rice cereal",
   "amount": "1 tsp",
   "note": "1 tsp"
+ },
+ {
+  "id": "tg-10",
+  "time": 1793099700000,
+  "type": "bottle",
+  "ml": 100,
+  "milk": "formula"
  }
 ]
