@@ -44,10 +44,27 @@ h3{font-size:14px;color:#1c2540;margin:26px 0 8px}
 .acts{display:flex;gap:8px;margin-top:14px}.acts button{flex:1;padding:10px;border-radius:8px;border:1px solid #d6dce7;background:#fff;cursor:pointer}.acts .p{background:#3a8d9c;color:#fff;border:0}
 .hot{color:#c0392b;font-weight:700}.hotT{background:#fdecea!important}.hotT b{color:#c0392b}.ind{font-size:10px;font-weight:700;border-radius:999px;padding:3px 8px;white-space:nowrap}.ind.ok{background:#e3f4e8;color:#2e7d4f}.ind.amb{background:#fdf1dc;color:#a46a0b}.ind.na{background:#eef1f6;color:#8a93a6}
 .tg{display:flex;gap:8px;align-items:center;font-size:13px;border-top:1px solid #edf0f5;margin-top:8px;padding-top:8px}.tg>.dk{width:76px}.tg>span:nth-child(2){flex:1;color:#1c2540}
-.bandA{position:absolute;left:0;right:0;background:#4aa8b833;border-top:1px dashed #4aa8b8;border-bottom:1px dashed #4aa8b8;pointer-events:none}</style></head><body><div class="wrap">
+.bandA{position:absolute;left:0;right:0;background:#4aa8b833;border-top:1px dashed #4aa8b8;border-bottom:1px dashed #4aa8b8;pointer-events:none}
+body{background:#141a2e;color:#aab3c8;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+h1,.serif{font-family:"DM Serif Display",Georgia,"Times New Roman",serif;color:#f2f4fa}h1{font-size:34px;font-weight:400}
+b,.dk,.ent .d,.tg>span:nth-child(2),.days b,.tile b{color:#f2f4fa}.sub{color:#aab3c8}
+.card,.tile,.quick button,.days button,.tools button,.tools label{background:#1e2640;border:1px solid #2e3858;color:#f2f4fa}
+.card{border-radius:16px;padding:14px 16px}.tile{border-radius:14px;padding:12px}.tile span{color:#aab3c8}
+.feed{background:#2b3558;border-color:#3a4570;border-radius:20px;padding:20px}.feed .big{font-size:44px;font-weight:400;color:#f2f4fa}.feed .m{font-size:14px;color:#c4cbe0}
+.pill{background:#2b3558;color:#f2f4fa;padding:6px 12px;font-size:13px}.pill.warn{background:#f0a94a;color:#1c1c1c}
+.bar{height:8px;background:#2e3858;border-radius:4px}.bar i{background:#7a76d6;border-radius:4px}.tick{background:#aab3c8;top:-1px;height:10px}
+.ent+.ent,.sleep>div,.tg{border-color:#2e3858}.sleep{border-left-color:#4fbfae}.note{color:#8a93ad}
+.fab{background:#62c3b2;color:#10302b;box-shadow:0 4px 18px #0008}
+.sheet{background:#1e2640;color:#f2f4fa}.sheet input,.sheet select,.seg button,.acts button{background:#141a2e;color:#f2f4fa;border-color:#3a4570}.seg button.on{background:#2b3558;border-color:#62c3b2}.acts .p{background:#62c3b2;color:#10302b}
+.hotT{background:#4a2430!important}.hot,.hotT b{color:#ff8a80}.ind.ok{background:#1f3d33;color:#7fe0b4}.ind.amb{background:#47381c;color:#f0c070}.ind.na{background:#2b3558;color:#aab3c8}
+.chart i{background:#7a76d6}.chart s,.chart div{color:#c4cbe0}h3{color:#f2f4fa}.gear{color:#aab3c8}
+.pill{white-space:nowrap}#napT{font-size:13px!important;color:#aab3c8;margin-top:2px}.ncard .t2{font-size:13px;color:#aab3c8;margin-top:2px}.ncard b{font-size:16px}
+</style><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"></head><body><div class="wrap">
 <h1><span id="name"></span><button class="gear" id="gear" title="Settings">⚙️</button></h1>
 <div class="sub" id="born"></div><div class="sub dk" id="wt" style="font-weight:600"></div>
 <div class="card feed"><p class="big serif" id="since"></p><div class="m" id="sinceM"></div></div>
+<div class="card ncard" id="nextC"><div class="row"><div><b id="nextT"></b><div class="t2">Every 3 hours from the last feed</div></div><span class="pill" id="nextP"></span></div></div>
+<div class="card ncard" id="asleepC" style="display:none"><div class="row" style="gap:10px"><div><b id="asleepT"></b><div class="t2" id="asleepM"></div></div><span class="pill" id="asleepP"></span></div></div>
 <div class="card"><div class="row"><div><b>Daytime naps <span id="napMin"></span></b><div style="font-size:11px" id="napT"></div></div><span class="pill" id="napPill"></span></div>
 <div class="bar"><i id="napBar"></i><span class="tick" id="napTickLo" style="left:58.33%"></span><span class="tick" id="napTickHi" style="left:75%"></span></div></div>
 <div class="days"><button id="prev">‹</button><div><b id="dayL"></b><small id="dayD"></small></div><button id="next">›</button></div>
@@ -73,7 +90,7 @@ const NORMS={"_meta":{"disclaimer":"Typical ranges for healthy term infants; wid
 let settings=Object.assign({name:"Kaylee",birth:"2026-04-02"},JSON.parse(localStorage.getItem(SKEY)||"{}"));
 const save=()=>localStorage.setItem(KEY,JSON.stringify(entries));const DKEY=KEY+".deleted",delIds=new Set(JSON.parse(localStorage.getItem(DKEY)||"[]")),markDel=id=>{delIds.add(id);localStorage.setItem(DKEY,JSON.stringify([...delIds]))};
 const sgDate=t=>new Date(t+OFF).toISOString().slice(0,10);
-const sgTime=t=>new Date(t+OFF).toISOString().slice(11,16);
+const sgTime=t=>new Date(t+OFF).toISOString().slice(11,16);const sgT12=t=>{const d=new Date(t+OFF),h=d.getUTCHours(),m=d.getUTCMinutes();return`${h%12||12}:${String(m).padStart(2,"0")} ${h<12?"am":"pm"}`};const sgAgeM=t=>(t-Date.parse((settings.birth||"2026-04-02")+"T00:00:00+08:00"))/(30.44*864e5);
 const sgHour=t=>new Date(t+OFF).getUTCHours();
 const dayStart=d=>Date.parse(d+"T00:00:00+08:00");
 const addDays=(d,n)=>sgDate(dayStart(d)+n*864e5);
@@ -99,7 +116,7 @@ function desc(e){switch(e.type){
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
 function stats(day){const d=entries.filter(e=>sgDate(e.time)===day),now=Date.now();
  const naps=d.filter(e=>e.type==="sleep"&&e.sleep!=="night");
- const napMs=naps.reduce((a,e)=>a+(e.end?e.end-e.time:isLive(e)?now-e.time:0),0);
+ const napMs=naps.reduce((a,e)=>a+(e.end?e.end-e.time:0),0);
  // night total: night sleep that ended (woke) on this day
  const night=entries.find(e=>e.type==="sleep"&&e.sleep==="night"&&e.end&&sgDate(e.end)===day);
  const nightMs=night?night.end-night.time:null;
@@ -134,12 +151,18 @@ function render(){const now=Date.now(),today=sgDate(now),s=stats(viewDay);
  $("born").textContent=`Born ${fmtD(settings.birth)} · ${age()}`;
  const w=latestWeight(today);$("wt").textContent=w?`Weight ${(+w.kg).toFixed(3)} kg · ${fmtD(sgDate(w.time))}`:"";
  const f=entries.filter(isFeed).filter(e=>e.time<=now).sort((a,b)=>b.time-a.time)[0];
- $("since").textContent=f?`${hm(now-f.time)} since last feed`:"No feed yet";
- $("sinceM").innerHTML=f?`${desc(f)} at ${sgTime(f.time)}${sgDate(f.time)!==today?" · "+fmtD(sgDate(f.time)):""}`:"Log a feed to start the timer.";
+ $("since").textContent=f?`${hm(now-f.time)} ago`:"No feed yet";
+ $("sinceM").innerHTML=f?`Last feed: ${f.type==="bottle"?`bottle ${f.milk==="formula"?"formula":"milk"}${f.ml!=null&&f.ml!==""?`, ${f.ml} ml`:""}`:f.type==="solids"?`solids${f.food?", "+esc(f.food):""}`:"breastfeed"} at ${sgTime(f.time)}${sgDate(f.time)!==today?" · "+fmtD(sgDate(f.time)):""}`:"Log a feed to start the timer.";
  const bdN=bandFor(viewDay),nt=(bdN&&bdN.nap_total_h)||[4,6],loH=nt[0],hiH=nt[1];
  const nm=Math.round(s.napMs/M),lo=Math.round(loH*60),hi=Math.round(hiH*60),barMaxH=Math.max(6,hiH);
  const fh=h=>Number.isInteger(h)?String(h):String(h);
- const lvN=s.list.find(e=>e.type==="sleep"&&e.sleep!=="night"&&!e.end&&isLive(e));$("napMin").textContent=hm(nm*M)+(lvN?` (incl. ongoing nap since ${sgTime(lvN.time)})`:"");
+ const lvN=s.list.find(e=>e.type==="sleep"&&e.sleep!=="night"&&!e.end&&isLive(e));$("napMin").textContent=hm(nm*M);
+ if(f){const nx=f.time+3*H,dm=Math.round((nx-now)/M);$("nextT").textContent=`Next feed ${sgT12(nx)}`;$("nextP").textContent=dm>=0?`in ${hm(dm*M)}`:`${hm(-dm*M)} overdue`;$("nextC").style.display=""}else $("nextC").style.display="none";
+ const lv=viewDay===today?entries.find(e=>e.type==="sleep"&&!e.end&&isLive(e)):null;
+ if(lv){const am=sgAgeM(lv.time),mx=am<4?2.5:am<9?2:1.75,by=lv.time+mx*H,ww=(bdN&&bdN.nap_total_h)?"":"";$("asleepC").style.display="";$("asleepT").textContent=`Asleep ${hm(now-lv.time)}`;
+  if(lv.sleep==="night"){$("asleepM").textContent=`Night sleep since ${sgTime(lv.time)}`;$("asleepP").textContent="Sleeping";$("asleepP").className="pill"}
+  else{$("asleepM").textContent=`Usual nap 30–60 min, wake by ${sgT12(by)} at the latest`;const late=now>by;$("asleepP").textContent=late?"Wake her":`${hm(by-now)} left`;$("asleepP").className="pill"+(late?" warn":"")}}
+ else $("asleepC").style.display="none";
  $("napT").textContent=`Target ${fh(loH)}–${fh(hiH)} hours · ${s.naps} nap${s.naps==1?"":"s"}`;
  $("napPill").textContent=nm>=lo?"Target reached":`${hm((lo-nm)*M)} to go`;
  $("napBar").style.width=Math.min(100,nm/(barMaxH*60)*100)+"%";
@@ -148,7 +171,7 @@ function render(){const now=Date.now(),today=sgDate(now),s=stats(viewDay);
  $("next").disabled=viewDay>=today;
  const sl=s.napMs+(s.nightMs||0);
  const wv=latestWeight(viewDay),mlkg=wv?Math.round(s.milk/wv.kg):null;
- $("tiles").innerHTML=[[s.milk+" ml","Milk total"],[mlkg!=null?mlkg+" ml/kg":"–",wv?`Milk per kg (${(+wv.kg).toFixed(3)} kg)`:"Log a weight"],[s.feeds,"Feeds"],[s.solids,"Solids"],[s.wet,"Wet diapers"],[s.poo,"Poo diapers"],[(Math.round(sl/H*10)/10)+"h","Sleep"]].concat(s.pump?[[s.pump+" ml","Pumped"]]:[]).concat(s.temp?[[s.temp.temp+"°C","Latest temp "+sgTime(s.temp.time),s.temp.temp>=37.5]]:[]).map(([v,l,hot])=>`<div class="tile${hot?" hotT":""}"><b>${v}</b><span>${l}</span></div>`).join("");
+ $("tiles").innerHTML=[[s.milk+" ml","Milk total"],[mlkg!=null?mlkg+" ml/kg":"–",wv?`Milk per kg (${(+wv.kg).toFixed(3)} kg)`:"Log a weight"],[s.feeds,"Feeds"],[s.solids,"Solids"],[s.wet,"Wet diapers"],[s.poo,"Poo diapers"],[hm(sl),"Sleep"]].concat(s.pump?[[s.pump+" ml","Pumped"]]:[]).concat(s.temp?[[s.temp.temp+"°C","Latest temp "+sgTime(s.temp.time),s.temp.temp>=37.5]]:[]).map(([v,l,hot])=>`<div class="tile${hot?" hotT":""}"><b>${v}</b><span>${l}</span></div>`).join("");
  $("sleepC").innerHTML=`<div class="row"><b>🌙 Total sleep</b><b>${hmin(sl)}${s.nightMs==null?"+":""}</b></div>
  <div class="row"><span class="dk">Night total ${s.nightMs==null?'<span class="note">bedtime or wake-up not logged</span>':'<span class="note">bedtime to wake-up</span>'}</span><b>${s.nightMs==null?"–":hmin(s.nightMs)}</b></div>
  <div class="row"><span class="dk">Nap total</span><b>${hmin(s.napMs)}</b></div>`;
