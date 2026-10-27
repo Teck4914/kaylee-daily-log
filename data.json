@@ -1454,5 +1454,13 @@
   "id": "tg-8",
   "time": 1793093400000,
   "type": "wake"
+ },
+ {
+  "id": "tg-9",
+  "time": 1793094900000,
+  "type": "solids",
+  "food": "rice cereal",
+  "amount": "1 tsp",
+  "note": "1 tsp"
  }
 ]
