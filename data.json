@@ -1526,5 +1526,13 @@
   "id": "tg-19",
   "time": 1793148900000,
   "type": "wake"
+ },
+ {
+  "id": "tg-20",
+  "time": 1793150100000,
+  "type": "solids",
+  "food": "apple oat cereal with 1/2 teaspoon yolk till 9.25am",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
