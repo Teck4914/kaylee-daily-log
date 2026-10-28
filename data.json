@@ -1672,5 +1672,12 @@
   "type": "bottle",
   "ml": 60,
   "milk": "formula"
+ },
+ {
+  "id": "tg-39",
+  "time": 1793204100000,
+  "type": "bottle",
+  "ml": 70,
+  "milk": "formula"
  }
 ]
