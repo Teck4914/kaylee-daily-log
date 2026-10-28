@@ -1415,7 +1415,8 @@
   "id": "bk-20261027-1210-sleep-1",
   "time": 1793074200000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1793082900000
  },
  {
   "id": "tg-4",
@@ -1448,7 +1449,8 @@
   "id": "tg-7",
   "time": 1793090700000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1793093400000
  },
  {
   "id": "tg-8",
@@ -1481,7 +1483,8 @@
   "id": "tg-11-2",
   "time": 1793101200000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "night",
+  "end": 1793137920000
  },
  {
   "id": "tg-12",
@@ -1520,7 +1523,15 @@
   "id": "tg-17-2",
   "time": 1793142600000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1793148900000
+ },
+ {
+  "id": "tg-18",
+  "time": 1793143680000,
+  "type": "pump",
+  "mins": 20,
+  "ml": 150
  },
  {
   "id": "tg-19",
@@ -1560,7 +1571,8 @@
   "id": "tg-24",
   "time": 1793157300000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1793159100000
  },
  {
   "id": "tg-25",
@@ -1592,7 +1604,8 @@
   "id": "tg-29",
   "time": 1793167020000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1793171520000
  },
  {
   "id": "tg-30",
@@ -1625,7 +1638,8 @@
   "id": "tg-34",
   "time": 1793178900000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1793180700000
  },
  {
   "id": "tg-35",
