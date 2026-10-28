@@ -1645,5 +1645,19 @@
   "id": "tg-35",
   "time": 1793180700000,
   "type": "wake"
+ },
+ {
+  "id": "tg-36",
+  "time": 1793186400000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "tg-36-2",
+  "time": 1793187840000,
+  "type": "bottle",
+  "ml": 30,
+  "milk": "formula"
  }
 ]
