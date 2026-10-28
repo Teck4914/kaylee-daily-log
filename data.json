@@ -1598,5 +1598,20 @@
   "id": "tg-30",
   "time": 1793171520000,
   "type": "wake"
+ },
+ {
+  "id": "tg-31",
+  "time": 1793173980000,
+  "type": "solids",
+  "food": "rice cereal with 1/4 teaspoon spinach puree",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
+ },
+ {
+  "id": "tg-32",
+  "time": 1793175000000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
  }
 ]
