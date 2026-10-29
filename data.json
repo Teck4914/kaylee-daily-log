@@ -1738,5 +1738,13 @@
   "id": "tg-46",
   "time": 1793247000000,
   "type": "wake"
+ },
+ {
+  "id": "tg-47",
+  "time": 1793248800000,
+  "type": "solids",
+  "food": "rice cereal with 1 teaspoon spinach puree",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
