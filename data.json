@@ -1711,5 +1711,26 @@
   "id": "tg-43",
   "time": 1793232000000,
   "type": "wake"
+ },
+ {
+  "id": "tg-44",
+  "time": 1793234700000,
+  "type": "solids",
+  "food": "oatmeal puree with yolk till 9am",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
+ },
+ {
+  "id": "tg-45",
+  "time": 1793244240000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
+ },
+ {
+  "id": "tg-45-2",
+  "time": 1793244300000,
+  "type": "sleep",
+  "sleep": "nap"
  }
 ]
