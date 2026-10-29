@@ -1746,5 +1746,12 @@
   "food": "rice cereal with 1 teaspoon spinach puree",
   "amount": "1 tbsp",
   "note": "1 tbsp"
+ },
+ {
+  "id": "tg-48",
+  "time": 1793251200000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "breast"
  }
 ]
