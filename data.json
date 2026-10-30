@@ -1905,5 +1905,13 @@
   "id": "tg-82",
   "time": 1793340300000,
   "type": "wake"
+ },
+ {
+  "id": "tg-100",
+  "time": 1793343600000,
+  "type": "solids",
+  "food": "carrot puree",
+  "amount": "1/3 tbsp",
+  "note": "1/3 tbsp"
  }
 ]
