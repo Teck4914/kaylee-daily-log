@@ -1879,5 +1879,12 @@
   "type": "bottle",
   "ml": 80,
   "milk": "breast"
+ },
+ {
+  "id": "tg-78",
+  "time": 1793337600000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "breast"
  }
 ]
