@@ -1824,10 +1824,16 @@
   "id": "tg-71-2",
   "time": 1793315700000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1793319600000
  },
  {
   "id": "tg-72",
+  "time": 1793319600000,
+  "type": "wake"
+ },
+ {
+  "id": "tg-72-2",
   "time": 1793320200000,
   "type": "bottle",
   "ml": 70,
@@ -1839,5 +1845,32 @@
   "type": "bottle",
   "ml": 80,
   "milk": "breast"
+ },
+ {
+  "id": "tg-74",
+  "time": 1793326800000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
+ },
+ {
+  "id": "tg-74-2",
+  "time": 1793327100000,
+  "type": "sleep",
+  "sleep": "nap",
+  "end": 1793329200000
+ },
+ {
+  "id": "tg-75",
+  "time": 1793329200000,
+  "type": "wake"
+ },
+ {
+  "id": "tg-76",
+  "time": 1793330700000,
+  "type": "solids",
+  "food": "oatmeal cereal with 2/4 yolk",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
