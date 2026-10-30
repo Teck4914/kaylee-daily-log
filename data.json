@@ -1872,5 +1872,12 @@
   "food": "oatmeal cereal with 2/4 yolk",
   "amount": "1 tbsp",
   "note": "1 tbsp"
+ },
+ {
+  "id": "tg-77",
+  "time": 1793335800000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "breast"
  }
 ]
