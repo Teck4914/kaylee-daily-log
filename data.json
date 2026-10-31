@@ -2019,5 +2019,13 @@
   "id": "tg-123",
   "time": 1793410500000,
   "type": "wake"
+ },
+ {
+  "id": "tg-124",
+  "time": 1793412420000,
+  "type": "solids",
+  "food": "oatmeal cereal with 2/4 yolk till 10.17am",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
