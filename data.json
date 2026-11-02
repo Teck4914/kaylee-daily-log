@@ -2284,5 +2284,12 @@
   "time": 1793580600000,
   "type": "solids",
   "food": "instant strawberry/banana oatmeal cereal with 2/4 yolk till 9.05am"
+ },
+ {
+  "id": "tg-224",
+  "time": 1793585700000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "breast"
  }
 ]
