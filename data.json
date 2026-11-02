@@ -2357,5 +2357,12 @@
   "time": 1793617800000,
   "type": "sleep",
   "sleep": "nap"
+ },
+ {
+  "id": "tg-247",
+  "time": 1793620680000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
  }
 ]
