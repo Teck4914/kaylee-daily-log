@@ -2303,5 +2303,13 @@
   "id": "tg-232",
   "time": 1793591580000,
   "type": "wake"
+ },
+ {
+  "id": "tg-233",
+  "time": 1793595000000,
+  "type": "solids",
+  "food": "rice cereal with spinach puree",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
