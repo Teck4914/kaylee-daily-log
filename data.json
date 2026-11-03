@@ -2442,5 +2442,13 @@
   "id": "tg-262",
   "time": 1793678100000,
   "type": "wake"
+ },
+ {
+  "id": "tg-263",
+  "time": 1793679300000,
+  "type": "solids",
+  "food": "oatmeal with 2/4 yolk until 12.30pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
