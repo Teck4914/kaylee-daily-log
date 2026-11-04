@@ -2617,5 +2617,13 @@
   "id": "tg-291",
   "time": 1793772000000,
   "type": "wake"
+ },
+ {
+  "id": "tg-292",
+  "time": 1793776800000,
+  "type": "solids",
+  "food": "sweet potato puree till 3.35pm",
+  "amount": "1/2 tbsp",
+  "note": "1/2 tbsp"
  }
 ]
