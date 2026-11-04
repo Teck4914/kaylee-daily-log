@@ -2528,13 +2528,6 @@
   "milk": "formula"
  },
  {
-  "id": "tg-288-2",
-  "time": 1793723400000,
-  "type": "bottle",
-  "ml": 90,
-  "milk": "breast"
- },
- {
   "id": "tg-275",
   "time": 1793726100000,
   "type": "bottle",
@@ -2597,6 +2590,13 @@
   "time": 1793764500000,
   "type": "bottle",
   "ml": 30,
+  "milk": "breast"
+ },
+ {
+  "id": "tg-288-2",
+  "time": 1793766600000,
+  "type": "bottle",
+  "ml": 90,
   "milk": "breast"
  }
 ]
