@@ -2677,7 +2677,8 @@
   "id": "tg-300",
   "time": 1793793300000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "night",
+  "end": 1793826300000
  },
  {
   "id": "tg-301",
@@ -2685,5 +2686,10 @@
   "type": "bottle",
   "ml": 110,
   "milk": "formula"
+ },
+ {
+  "id": "tg-302",
+  "time": 1793826300000,
+  "type": "wake"
  }
 ]
