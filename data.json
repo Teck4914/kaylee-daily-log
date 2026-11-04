@@ -2710,5 +2710,12 @@
   "id": "tg-304",
   "time": 1793832840000,
   "type": "wake"
+ },
+ {
+  "id": "tg-306",
+  "time": 1793834400000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "formula"
  }
 ]
