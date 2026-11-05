@@ -2766,5 +2766,13 @@
   "id": "tg-311",
   "time": 1793866500000,
   "type": "wake"
+ },
+ {
+  "id": "tg-312",
+  "time": 1793866800000,
+  "type": "solids",
+  "food": "rice cereal with sweet potato puree",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
