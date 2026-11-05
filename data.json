@@ -2729,5 +2729,11 @@
   "id": "tg-307-2",
   "time": 1793844300000,
   "type": "wake"
+ },
+ {
+  "id": "tg-308",
+  "time": 1793845200000,
+  "type": "solids",
+  "food": "oatmeal cereal with yolk till 10.25am"
  }
 ]
