@@ -2866,5 +2866,11 @@
   "id": "tg-331",
   "time": 1793929080000,
   "type": "wake"
+ },
+ {
+  "id": "tg-332",
+  "time": 1793929500000,
+  "type": "solids",
+  "food": "1 table spoon banana with half yolk"
  }
 ]
