@@ -2939,5 +2939,13 @@
   "id": "tg-347",
   "time": 1793955000000,
   "type": "wake"
+ },
+ {
+  "id": "tg-348",
+  "time": 1793956200000,
+  "type": "solids",
+  "food": "rice cereal till 5.25pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
