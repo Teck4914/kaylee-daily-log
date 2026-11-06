@@ -2898,5 +2898,13 @@
   "id": "tg-337",
   "time": 1793940240000,
   "type": "wake"
+ },
+ {
+  "id": "tg-342",
+  "time": 1793942700000,
+  "type": "solids",
+  "food": "sweet potato puree with rice cereal till 1.40pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
