@@ -2872,5 +2872,12 @@
   "time": 1793929500000,
   "type": "solids",
   "food": "1 table spoon banana with half yolk"
+ },
+ {
+  "id": "tg-333",
+  "time": 1793934000000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
  }
 ]
