@@ -3012,5 +3012,19 @@
   "time": 1794013200000,
   "type": "solids",
   "food": "half yolk with 1/2 teaspoon apple oat cereal"
+ },
+ {
+  "id": "tg-374",
+  "time": 1794018000000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "breast"
+ },
+ {
+  "id": "tg-374-2",
+  "time": 1794020100000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "breast"
  }
 ]
