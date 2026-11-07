@@ -3006,5 +3006,11 @@
   "id": "tg-372",
   "time": 1794012000000,
   "type": "wake"
+ },
+ {
+  "id": "tg-373",
+  "time": 1794013200000,
+  "type": "solids",
+  "food": "half yolk with 1/2 teaspoon apple oat cereal"
  }
 ]
