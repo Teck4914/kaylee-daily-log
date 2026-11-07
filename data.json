@@ -2973,7 +2973,8 @@
   "id": "tg-351",
   "time": 1793964000000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "night",
+  "end": 1794002100000
  },
  {
   "id": "tg-352",
@@ -2981,5 +2982,23 @@
   "type": "bottle",
   "ml": 60,
   "milk": "formula"
+ },
+ {
+  "id": "tg-370",
+  "time": 1794002100000,
+  "type": "wake"
+ },
+ {
+  "id": "tg-370-2",
+  "time": 1794007200000,
+  "type": "bottle",
+  "ml": 150,
+  "milk": "breast"
+ },
+ {
+  "id": "tg-370-3",
+  "time": 1794009000000,
+  "type": "sleep",
+  "sleep": "nap"
  }
 ]
