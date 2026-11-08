@@ -3187,5 +3187,13 @@
   "id": "tg-397",
   "time": 1794127020000,
   "type": "wake"
+ },
+ {
+  "id": "tg-398",
+  "time": 1794129300000,
+  "type": "solids",
+  "food": "swet potato puree with rice cereal till 5.30pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
