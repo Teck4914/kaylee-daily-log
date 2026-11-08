@@ -3195,5 +3195,12 @@
   "food": "swet potato puree with rice cereal till 5.30pm",
   "amount": "1 tbsp",
   "note": "1 tbsp"
+ },
+ {
+  "id": "tg-400",
+  "time": 1794135600000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
  }
 ]
