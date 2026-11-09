@@ -3308,5 +3308,13 @@
   "time": 1794211800000,
   "type": "sleep",
   "sleep": "nap"
+ },
+ {
+  "id": "tg-424",
+  "time": 1794217920000,
+  "type": "solids",
+  "food": "rice cereal with spinach puree till 6pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
