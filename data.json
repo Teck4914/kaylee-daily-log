@@ -3273,5 +3273,13 @@
   "id": "tg-417",
   "time": 1794201480000,
   "type": "wake"
+ },
+ {
+  "id": "tg-418",
+  "time": 1794204000000,
+  "type": "solids",
+  "food": "rice cereal with sweet potato puree till 2.10pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
