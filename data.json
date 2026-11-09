@@ -3322,5 +3322,19 @@
   "food": "rice cereal with spinach puree till 6pm",
   "amount": "1 tbsp",
   "note": "1 tbsp"
+ },
+ {
+  "id": "tg-425",
+  "time": 1794223200000,
+  "type": "bottle",
+  "ml": 50,
+  "milk": "breast"
+ },
+ {
+  "id": "tg-425-2",
+  "time": 1794225300000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "formula"
  }
 ]
