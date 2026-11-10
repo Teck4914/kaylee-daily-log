@@ -3429,6 +3429,20 @@
   "id": "tg-445",
   "time": 1794288600000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1794294480000
+ },
+ {
+  "id": "tg-446",
+  "time": 1794294480000,
+  "type": "wake"
+ },
+ {
+  "id": "tg-446-2",
+  "time": 1794294600000,
+  "type": "solids",
+  "food": "rice cereal with spinach puree till 3.25pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
