@@ -3558,5 +3558,13 @@
   "id": "tg-483",
   "time": 1794377940000,
   "type": "wake"
+ },
+ {
+  "id": "tg-484",
+  "time": 1794382200000,
+  "type": "solids",
+  "food": "rice cereal with 1/2 yolk till 3.40pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
