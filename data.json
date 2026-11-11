@@ -3632,5 +3632,12 @@
   "id": "tg-494",
   "time": 1794436560000,
   "type": "wake"
+ },
+ {
+  "id": "tg-496",
+  "time": 1794438600000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
  }
 ]
