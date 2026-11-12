@@ -3718,5 +3718,11 @@
   "id": "tg-509",
   "time": 1794474900000,
   "type": "wake"
+ },
+ {
+  "id": "tg-510",
+  "time": 1794475500000,
+  "type": "solids",
+  "food": "sweet potato puree with 1 tablespoon rice cereal till 5.40pm"
  }
 ]
