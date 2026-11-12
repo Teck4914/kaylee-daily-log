@@ -3685,5 +3685,12 @@
   "food": "rice cereal with spinach and yolk puree",
   "amount": "1 tbsp",
   "note": "1 tbsp"
+ },
+ {
+  "id": "tg-505",
+  "time": 1794465000000,
+  "type": "bottle",
+  "ml": 20,
+  "milk": "breast"
  }
 ]
