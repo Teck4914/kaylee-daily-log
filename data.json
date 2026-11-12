@@ -3750,7 +3750,8 @@
   "id": "tg-514",
   "time": 1794485400000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "night",
+  "end": 1794521700000
  },
  {
   "id": "tg-514-2",
@@ -3765,5 +3766,10 @@
   "type": "bottle",
   "ml": 60,
   "milk": "formula"
+ },
+ {
+  "id": "tg-517",
+  "time": 1794521700000,
+  "type": "wake"
  }
 ]
