@@ -3677,5 +3677,13 @@
   "id": "tg-503",
   "time": 1794460740000,
   "type": "wake"
+ },
+ {
+  "id": "tg-504",
+  "time": 1794461400000,
+  "type": "solids",
+  "food": "rice cereal with spinach and yolk puree",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
