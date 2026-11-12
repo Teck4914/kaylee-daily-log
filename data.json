@@ -3692,5 +3692,12 @@
   "type": "bottle",
   "ml": 20,
   "milk": "breast"
+ },
+ {
+  "id": "tg-506",
+  "time": 1794466800000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "breast"
  }
 ]
