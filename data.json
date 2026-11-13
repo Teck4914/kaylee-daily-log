@@ -3796,5 +3796,12 @@
   "time": 1794529500000,
   "type": "solids",
   "food": "1/2 yolk with 1 tablespoon oatmeal cereal till 8.40am"
+ },
+ {
+  "id": "tg-521",
+  "time": 1794534300000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "breast"
  }
 ]
