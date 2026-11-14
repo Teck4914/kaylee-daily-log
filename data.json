@@ -3946,5 +3946,13 @@
   "id": "tg-553",
   "time": 1794636000000,
   "type": "wake"
+ },
+ {
+  "id": "tg-554",
+  "time": 1794637800000,
+  "type": "solids",
+  "food": "yolk with apple oat cereal",
+  "amount": "1 tsp",
+  "note": "1 tsp"
  }
 ]
