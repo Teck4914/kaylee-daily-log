@@ -3954,5 +3954,12 @@
   "food": "yolk with apple oat cereal",
   "amount": "1 tsp",
   "note": "1 tsp"
+ },
+ {
+  "id": "tg-555",
+  "time": 1794640800000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "breast"
  }
 ]
