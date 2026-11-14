@@ -3919,5 +3919,13 @@
   "id": "tg-549",
   "time": 1794625200000,
   "type": "wake"
+ },
+ {
+  "id": "tg-550",
+  "time": 1794626100000,
+  "type": "solids",
+  "food": "oatmeal cereal with yolk till 11.25am",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
