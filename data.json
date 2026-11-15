@@ -4115,5 +4115,13 @@
   "id": "tg-583",
   "time": 1794732600000,
   "type": "wake"
+ },
+ {
+  "id": "tg-584",
+  "time": 1794734100000,
+  "type": "solids",
+  "food": "chickpeas puree. Not interested",
+  "amount": "1 tsp",
+  "note": "1 tsp"
  }
 ]
