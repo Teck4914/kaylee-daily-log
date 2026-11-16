@@ -4240,5 +4240,13 @@
   "id": "tg-600",
   "time": 1794813240000,
   "type": "wake"
+ },
+ {
+  "id": "tg-601",
+  "time": 1794817200000,
+  "type": "solids",
+  "food": "rice cereal with brocolii till 4.30pm",
+  "amount": "1/2 tbsp",
+  "note": "1/2 tbsp"
  }
 ]
