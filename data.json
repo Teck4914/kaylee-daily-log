@@ -4274,7 +4274,8 @@
   "id": "tg-604-2",
   "time": 1794825900000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1794866640000
  },
  {
   "id": "tg-605",
@@ -4296,5 +4297,10 @@
   "type": "bottle",
   "ml": 60,
   "milk": "breast"
+ },
+ {
+  "id": "tg-608",
+  "time": 1794866640000,
+  "type": "wake"
  }
 ]
