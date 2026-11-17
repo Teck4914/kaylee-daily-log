@@ -4442,11 +4442,24 @@
   "id": "tg-646",
   "time": 1794916500000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "night",
+  "end": 1794954300000
  },
  {
   "id": "tg-647",
   "time": 1794930300000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
+ },
+ {
+  "id": "tg-649",
+  "time": 1794954300000,
+  "type": "wake"
+ },
+ {
+  "id": "tg-649-2",
+  "time": 1794954600000,
   "type": "bottle",
   "ml": 90,
   "milk": "formula"
