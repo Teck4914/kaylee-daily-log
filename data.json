@@ -4597,5 +4597,12 @@
   "id": "tg-670",
   "time": 1795039200000,
   "type": "wake"
+ },
+ {
+  "id": "tg-671",
+  "time": 1795040100000,
+  "type": "bottle",
+  "ml": 60,
+  "milk": "formula"
  }
 ]
