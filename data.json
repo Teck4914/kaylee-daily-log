@@ -4683,5 +4683,13 @@
   "id": "tg-682",
   "time": 1795077600000,
   "type": "wake"
+ },
+ {
+  "id": "tg-683",
+  "time": 1795080000000,
+  "type": "solids",
+  "food": "rice cereal with broccoli puree till 5.35pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
