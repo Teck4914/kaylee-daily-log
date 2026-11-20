@@ -4798,5 +4798,13 @@
   "id": "tg-699",
   "time": 1795153080000,
   "type": "wake"
+ },
+ {
+  "id": "tg-700",
+  "time": 1795155600000,
+  "type": "solids",
+  "food": "rice cereal with broccoli till 2.35pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
