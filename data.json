@@ -4962,5 +4962,13 @@
   "id": "tg-727",
   "time": 1795248720000,
   "type": "wake"
+ },
+ {
+  "id": "tg-728",
+  "time": 1795249800000,
+  "type": "solids",
+  "food": "apple banana puree till 4.50pm",
+  "amount": "1/2 tbsp",
+  "note": "1/2 tbsp"
  }
 ]
