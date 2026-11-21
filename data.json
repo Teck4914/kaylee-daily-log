@@ -4747,6 +4747,14 @@
   "milk": "formula"
  },
  {
+  "id": "tg-713",
+  "time": 1795134600000,
+  "type": "solids",
+  "food": "oatmeal cereal with 1/2 yolk till 8.45am",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
+ },
+ {
   "id": "tg-692",
   "time": 1795135800000,
   "type": "bottle",
@@ -4901,10 +4909,5 @@
   "type": "sleep",
   "sleep": "nap",
   "end": 1795219620000
- },
- {
-  "id": "tg-713",
-  "time": 1795219620000,
-  "type": "wake"
  }
 ]
