@@ -5034,5 +5034,13 @@
   "id": "tg-739",
   "time": 1795319700000,
   "type": "wake"
+ },
+ {
+  "id": "tg-740",
+  "time": 1795322100000,
+  "type": "solids",
+  "food": "rice cereal with chickpeas puree till 12.45pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
