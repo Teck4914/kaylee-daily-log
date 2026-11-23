@@ -5168,5 +5168,13 @@
   "id": "tg-758",
   "time": 1795409700000,
   "type": "wake"
+ },
+ {
+  "id": "tg-759",
+  "time": 1795411500000,
+  "type": "solids",
+  "food": "rice cereal with chickpeas puree till 1.30pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
