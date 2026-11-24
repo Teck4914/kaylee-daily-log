@@ -5268,5 +5268,13 @@
   "id": "tg-770",
   "time": 1795486200000,
   "type": "wake"
+ },
+ {
+  "id": "tg-772",
+  "time": 1795487400000,
+  "type": "solids",
+  "food": "rice cereal with 1/4 beef and yolk puree till 10.40am",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
