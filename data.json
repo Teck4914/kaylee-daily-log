@@ -5401,7 +5401,8 @@
   "id": "tg-790",
   "time": 1795575600000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "nap",
+  "end": 1795580400000
  },
  {
   "id": "tg-790-2",
@@ -5416,5 +5417,10 @@
   "type": "bottle",
   "ml": 40,
   "milk": "breast"
+ },
+ {
+  "id": "tg-791",
+  "time": 1795580400000,
+  "type": "wake"
  }
 ]
