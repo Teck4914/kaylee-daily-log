@@ -5497,7 +5497,8 @@
   "id": "tg-800",
   "time": 1795608900000,
   "type": "sleep",
-  "sleep": "nap"
+  "sleep": "night",
+  "end": 1795643100000
  },
  {
   "id": "tg-801",
@@ -5519,5 +5520,23 @@
   "type": "bottle",
   "ml": 60,
   "milk": "formula"
+ },
+ {
+  "id": "tg-803",
+  "time": 1795643100000,
+  "type": "wake"
+ },
+ {
+  "id": "tg-803-2",
+  "time": 1795645800000,
+  "type": "bottle",
+  "ml": 80,
+  "milk": "formula"
+ },
+ {
+  "id": "tg-803-3",
+  "time": 1795646400000,
+  "type": "sleep",
+  "sleep": "nap"
  }
 ]
