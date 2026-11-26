@@ -5586,5 +5586,12 @@
   "food": "rice cereal with spinach puree until 12.55pm",
   "amount": "1 tbsp",
   "note": "1 tbsp"
+ },
+ {
+  "id": "tg-810",
+  "time": 1795677300000,
+  "type": "bottle",
+  "ml": 120,
+  "milk": "formula"
  }
 ]
