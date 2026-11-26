@@ -5605,5 +5605,13 @@
   "id": "tg-812",
   "time": 1795684500000,
   "type": "wake"
+ },
+ {
+  "id": "tg-813",
+  "time": 1795685400000,
+  "type": "solids",
+  "food": "rice cereal with beef and spinach puree till 5.45pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
