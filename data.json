@@ -5699,5 +5699,13 @@
   "id": "tg-826",
   "time": 1795751400000,
   "type": "wake"
+ },
+ {
+  "id": "tg-827",
+  "time": 1795753800000,
+  "type": "solids",
+  "food": "rice cereal with spinach and sweet potato puree",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
