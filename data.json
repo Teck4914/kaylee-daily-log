@@ -5733,5 +5733,13 @@
   "id": "tg-830-2",
   "time": 1795765200000,
   "type": "wake"
+ },
+ {
+  "id": "tg-831",
+  "time": 1795768200000,
+  "type": "solids",
+  "food": "rice cereal with spinach puree and 1/4 apple till 4.40pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
