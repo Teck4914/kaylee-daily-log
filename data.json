@@ -5665,5 +5665,13 @@
   "id": "tg-821",
   "time": 1795738200000,
   "type": "wake"
+ },
+ {
+  "id": "tg-822",
+  "time": 1795739400000,
+  "type": "solids",
+  "food": "oatmeal cereal with banana puree till 8.40am",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
