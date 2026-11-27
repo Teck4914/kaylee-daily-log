@@ -5741,5 +5741,12 @@
   "food": "rice cereal with spinach puree and 1/4 apple till 4.40pm",
   "amount": "1 tbsp",
   "note": "1 tbsp"
+ },
+ {
+  "id": "tg-832",
+  "time": 1795771680000,
+  "type": "bottle",
+  "ml": 90,
+  "milk": "formula"
  }
 ]
