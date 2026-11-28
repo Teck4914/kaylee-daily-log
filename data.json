@@ -5815,5 +5815,12 @@
   "food": "oatmeal cereal with spinach puree and blueberries puree till 10.25pm",
   "amount": "1 tbsp",
   "note": "1 tbsp"
+ },
+ {
+  "id": "tg-845",
+  "time": 1795838700000,
+  "type": "bottle",
+  "ml": 150,
+  "milk": "breast"
  }
 ]
