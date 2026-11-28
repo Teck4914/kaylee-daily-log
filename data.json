@@ -5841,5 +5841,13 @@
   "id": "tg-848",
   "time": 1795844280000,
   "type": "wake"
+ },
+ {
+  "id": "tg-849",
+  "time": 1795845600000,
+  "type": "solids",
+  "food": "rice cereal with carrot puree till 2.30pm",
+  "amount": "1 tbsp",
+  "note": "1 tbsp"
  }
 ]
